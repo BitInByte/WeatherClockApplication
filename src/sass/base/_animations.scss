@@ -1,0 +1,61 @@
+@keyframes moveDownUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 120vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -120vh);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInBlink {
+    0% {
+        opacity: 0;
+        background-color: $color-black;
+    }
+
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+.animate {
+
+    &-fade-in {
+        animation: fadeIn .4s ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    &-delay-fade-in {
+        animation: fadeIn .4s ease-out .4s;
+    }
+
+    &-fade-in-blinking {
+        animation: fadeInBlink .4s ease-out;
+        animation-fill-mode: backwards;
+    }
+}

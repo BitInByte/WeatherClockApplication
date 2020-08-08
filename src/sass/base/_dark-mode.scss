@@ -1,0 +1,148 @@
+// * FOR DARK MODE QUERY
+
+body.dark {
+    background-image: $color-body-background-dark;
+    color: $color-white;
+
+
+    .home-container {
+        @include bg-color-dark-gradient;
+        &:not(:last-child) {
+            border-right: solid 1px rgba($color-white, .15);
+            @include respond (mid) {
+                border-right: 0;
+            }
+        }
+    }
+
+    @include respond(tab-land) {
+        .item-container {
+            @include bg-color-dark-gradient;
+
+            &__fav-icon {
+                color: $color-white;
+            }
+
+            &__delete-icon {
+                color: $color-white;
+            }
+
+            &--back {
+                color: $color-white;
+            }
+        }
+    }
+
+    .item-container--front {
+        @include bg-color-dark-gradient;
+
+        @include respond(tab-land) {
+            background-color: transparent;
+            background-image: none;
+        }
+    }
+
+
+    .item-container__add-new {
+        @include bg-color-dark-gradient;
+    }
+
+    .heading-primary,
+    .heading-tertiary  {
+        color: $color-white;
+    }
+
+    .dark-mode__label {
+        background-color: $color-white;
+    }
+
+    .dark-mode__ball {
+        background-color: #111;
+    }
+
+    .u-border-right {
+        border-right: solid 1px rgba($color-white, .15) !important;
+    }
+
+    .add-new-container{
+    
+    &__box {
+        @include bg-color-dark-gradient;
+    }
+
+    &__item {
+        color: $color-primary;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+    }
+
+    .form__input {
+        color: $color-white;
+
+        &::placeholder {
+            color: $color-white;
+        }
+    }
+
+    .form__label {
+        color: $color-white;
+    }
+
+    .country-group {
+        &__title {
+            @include bg-color-dark-gradient;
+            color: #c9c9c9;
+        }
+
+        &__today {
+            @include bg-color-dark-gradient;
+            color: $color-white;
+        }
+    }
+
+    .forecast-container {
+
+        &__item {
+            @include bg-color-dark-gradient;
+        }
+
+    }
+
+    .loader {
+        &__item {
+            background-color: $color-white;
+
+        }
+    }
+}
+
+.dark-mode {
+
+    &__container {
+
+        display: inline-block;
+
+        @include clearfix;
+    }
+
+    &__title,
+    &__btn {
+        float: left;
+    }
+
+    &__btn {
+        position: relative;
+    }
+
+    &__title {
+        color: $color-white;
+
+    }
+
+}
+
+
+

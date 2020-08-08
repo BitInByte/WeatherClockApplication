@@ -1,0 +1,61 @@
+// * ====== VARIABLES ======
+
+// * COLORS | LIGHT MODE
+$color-primary-dark: #0D47A1;
+$color-primary: #2196F3;
+$color-primary-light: #BBDEFB;
+
+$color-component-background: #f2f9fe;
+
+$color-secondary: #FFA000;
+$color-secondary-light: #FFECB3;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-body-background: linear-gradient(to right bottom, $color-primary, $color-primary-light);
+// $color-body-background-dark: linear-gradient(to right bottom, #0D47A1, #01579B);
+$color-body-background-dark: linear-gradient( to bottom, #263238, #263238) ;
+$color-elements-background-dark: linear-gradient(to bottom, #0D47A1, #01579B);
+
+// * COLORS | DARK MODE
+
+
+// * LENGHTS
+$container-width: 114rem; // 1140px
+$gutter-horizontal: 6rem;
+$gutter-horizontal-2: 2rem;
+
+// * FONT
+$default-font-size: 1.6rem;
+$font-size-h1: 3.5rem;
+$font-size-h2: 2.5rem;
+$font-size-h3: 1.5rem;
+
+$font-wheight-bold: 700;
+
+$font-watch: 'Orbitron', sans-serif;
+
+// - MEDIA QUERIES -
+$font-size-h1-mq: 2.5rem;
+$font-size-h2-mq: 1.5rem;
+$font-size-h3-mq: .5rem;
+
+// * SHADOWS
+$shadow-effect-1: 0 1.5rem 4rem rgba($color-black, .15);
+$shadow-effect-2: 0 0 1rem 1rem rgba($color-black, .15);
+
+$shadow-inset-1: 0 0 2rem 1rem rgba($color-black, .5);
+
+$shadow-background-1: linear-gradient(to bottom, #fff 60%, rgba(#000, .2));
+
+// * BORDER RADIUS
+$border-radius-container: .5rem;
+

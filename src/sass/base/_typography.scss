@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+
+}
+
+%heading-primary-placeholder {
+    display: block;
+}
+
+.heading-primary {
+    @extend %heading-primary-placeholder;
+    font-size: $font-size-h1;
+    color: $color-grey-dark;
+
+    font-weight: $font-wheight-bold;
+    letter-spacing: .7rem;
+
+}
+
+.heading-secondary {
+    font-size: $font-size-h2;
+    
+}
+
+.heading-tertiary {
+    font-size: $font-size-h3;
+    text-transform: uppercase;
+
+    color: $color-grey-dark;
+
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,61 @@
+$width: 10px;
+$height: 50px;
+
+$time: 0.5s;
+
+$margin: 0 1.5px;
+
+$delay-1: calc(#{$time} / 5);
+$delay-2: calc((#{$time} / 5) * 2);
+$delay-3: calc((#{$time} / 5) * 3);
+$delay-4: calc((#{$time} / 5) * 4);
+$delay-5: calc((#{$time} / 5) * 5);
+
+.loader {
+    
+    width: 100%;
+    text-align: center;
+    padding: 2rem 3rem;
+
+	&__item {
+		display: inline-block;
+		width: $width;
+		height: $height;
+
+		margin: $margin;
+
+		border-radius: $width;
+
+		background-color: $color-primary-dark;
+	}
+
+	&--1 {
+		animation: loader $time infinite alternate;
+	}
+
+	&--2 {
+		animation: loader $time infinite $delay-1 alternate;
+	}
+
+	&--3 {
+		animation: loader $time infinite $delay-2 alternate;
+	}
+
+	&--4 {
+		animation: loader $time infinite $delay-3 alternate;
+	}
+
+	&--5 {
+		animation: loader $time infinite $delay-4 alternate;
+	}
+}
+
+@keyframes loader {
+
+
+	0% {
+		transform: scaleY(1.5);
+		color: $color-secondary;
+	}
+
+}

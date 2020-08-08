@@ -1,0 +1,80 @@
+.switch {
+
+    &__btn {
+
+        position: relative;
+
+        &-title {
+
+            display: block;
+
+            position: absolute;
+            color: $color-white;
+
+            top: 50%;
+            transform: translateY(-50%);
+
+            font-size: 2rem;
+
+            z-index: 10;
+
+            &--1 {
+                left: .3rem;
+            }
+
+            &--2 {
+                left: 3.3rem;
+            }
+        }
+    }
+
+    &__checkbox {
+         // 	Remove the checkbox from the page
+         opacity: 0;
+ 
+         @include center-horizontal-vertical;
+    }
+
+    &__label {
+        display: block;
+    
+        width: 5rem;
+        height: 2.6rem;
+    
+        border-radius: 50px;
+    
+        background-color: #111;
+    
+        padding: .5rem;
+    
+        position: relative;
+        
+        margin: 1rem;
+    
+        cursor: pointer;
+    }
+
+    &__ball {
+        width: 2.2rem;
+        height: 2.2rem;
+    
+        background-color: $color-white;
+    
+        border-radius: 50%;
+    
+        position: absolute;
+    
+        top: .2rem;
+        left: .2rem;
+
+        z-index: 18;
+    
+        transition: transform 0.2s linear;
+
+        
+    }
+
+    &__checkbox:checked + &__label &__ball {
+        transform: translateX(2.4rem);
+    }
+}

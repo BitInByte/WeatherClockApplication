@@ -1,0 +1,37 @@
+.container {
+    margin: 0 auto;
+
+    max-width: $container-width;
+
+    @include clearfix;
+}
+
+// * GRID 
+
+// [class^="col-"] {
+// }
+
+.col-1-of-2 {
+    width: 50%;
+    @include columns2;
+}
+
+.col-1-of-4 {
+    min-width: 25%;
+    @include columns2;
+
+
+
+    @include respond(tab-port) {
+        min-width: 33.33333333%;
+    }
+
+    @include respond(mid) {
+        min-width: 50%;
+    }
+
+    @include respond(phone-small) {
+        min-width: 100%;
+        padding: 0 10%;
+    }
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather Time app</title>
+</head>
+
+<body>
+
+    <section class="section-controls">
+
+        <!-- <div class="dark-mode__container">
+
+            <div class="dark-mode"></div>
+            <h2 class="heading-secondary dark-mode__title">
+                Dark Mode:
+            </h2>
+
+
+            <div class="dark-mode__btn switch__btn">
+             
+
+                <input type="checkbox" id="checkbox" class="switch__checkbox dark-mode__checkbox">
+                <label for="checkbox" class="switch__label">
+
+                    <div class="switch__ball"></div>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="temperature-unit">
+            <h2 class="heading-secondary temperature-unit__title">
+                Temperature unit:
+            </h2>
+
+            <div class="temperature-unit__btn switch__btn">
+
+
+                <input type="checkbox" id="checkbox-temperature" class="switch__checkbox temperature-unit__checkbox">
+                <label for="checkbox-temperature" class="switch__label">
+
+                    <span class="temperature-unit__btn-title switch__btn-title switch__btn-title--1">
+                        C
+                    </span>
+                    <div class="switch__ball"></div>
+                    <span class="temperature-unit__btn-title switch__btn-title switch__btn-title--2">
+                        F
+                    </span>
+                </label>
+
+
+            </div>
+
+        </div> -->
+
+    </section>
+
+
+
+    <main class="container">
+
+
+        <!-- </div> -->
+
+        <section class="section-home container">
+
+            <div class="animate-fade-in home-container__wraper">
+
+                <!-- <div class="col-1-of-2"> -->
+
+                <!-- <div class="home-container home-container--current-location u-border-right">
+                        <h1 class="heading-primary">
+                            Lisbon,
+                        </h1>
+                        <h2 class="heading-tertiary">
+                            Portugal
+                        </h2>
+
+                        <ion-icon name="sunny-outline" class="home-container__icon"></ion-icon>
+
+                        <div class="home-container__weather">
+                            35&deg;C
+                        </div>
+
+                        <div class="home-container__time">
+                            99:99:99
+                        </div>
+                    </div> -->
+
+
+
+                <!-- <div class="home-container home-container--current-location u-border-right"> -->
+                <div class="home-container home-container--current-location">
+                    <div class="home-container__welcome-message">
+                        <h2 class="heading-secondary u-color-alert">
+                            The location have to be enabled to display your weather
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+
+                <!-- <div class="home-container home-container--favorite u-border-right"> -->
+                <div class="home-container home-container--favorite">
+                    <div class="home-container__welcome-message">
+                        <h2 class="heading-secondary u-color-alert">
+                            No country as set as favourite yet
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- <div class="col-1-of-2"> -->
+                <!--<div class="home-container">
+
+
+
+                        
+
+                        <h1 class="heading-primary">
+                            New York,
+                        </h1>
+                        <h2 class="heading-tertiary">
+                            USA
+                        </h2>
+
+                        <ion-icon name="sunny-outline" class="home-container__icon"></ion-icon>
+                        <img src="img/weather-icons/01d.svg" alt="" class="home-container__icon">
+
+                        <div class="home-container__weather">
+                            35&deg;C
+                        </div>
+
+                        <div class="home-container__time">
+                            99:99:99
+                        </div>
+                    </div> -->
+                <!-- </div> -->
+
+            </div>
+
+        </section>
+
+        <section class="section-wrapper container animate-fade-in">
+
+            <!-- <div class="animate-fade-in"> -->
+
+            <!-- <div class="col-1-of-4">
+
+                    
+                    <div class="item-container">
+                        <a href="#">
+                            <div class="item-container__side item-container--front">
+                                <span class="item-container__title">
+                                    New York
+                                </span>
+
+                                <span class="item-container__country">
+                                    Usa
+                                </span>
+
+                                <img src="img/weather-icons/01d.svg" alt="" class="item-container__icon" />
+                                <!-- <ion-icon name="sunny-outline" class="item-container__icon"></ion-icon> 
+
+                                <div class="item-container__weather">
+                                    35&deg;C
+                                </div>
+                            </div>
+
+                            <div class="item-container__side item-container--back">
+                                <div class="item-container__time">
+                                    99:99:99
+                                </div>
+
+                                <div class="item-container__fav">
+                                    <a href="#">
+                                        <ion-icon name="star-outline" class="item-container__fav-icon"></ion-icon>
+                                        
+                                    </a>
+                                </div>
+
+                                <div class="item-container__delete">
+                                    <a href="#" class="item-container__link">
+                                        <ion-icon name="close-circle-outline" class="item-container__delete-icon"></ion-icon>
+                                        
+                                    </a>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="item-container">
+
+                        <div class="item-container__side item-container--front">
+                            <span class="item-container__title">
+                                New York
+                            </span>
+
+                            <span class="item-container__country">
+                                Usa
+                            </span>
+
+                            <ion-icon name="sunny-outline" class="item-container__icon"></ion-icon>
+
+                            <div class="item-container__weather">
+                                35&deg;C
+                            </div>
+                        </div>
+
+                        <div class="item-container__side item-container--back">
+                            <div class="item-container__time">
+                                99:99:99
+                            </div>
+
+                            <div class="item-container__fav">
+                                <a href="#">
+                                    <ion-icon name="star-outline" class="item-container__fav-icon"></ion-icon>
+                                    
+                                </a>
+                            </div>
+
+                            <div class="item-container__delete">
+                                <a href="#">
+                                    <ion-icon name="close-circle-outline" class="item-container__delete-icon"></ion-icon>
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-1-of-4">
+                    <div class="item-container">
+
+                        <div class="item-container__side item-container--front">
+                            <span class="item-container__title">
+                                New York
+                            </span>
+
+                            <span class="item-container__country">
+                                Usa
+                            </span>
+
+                            <ion-icon name="sunny-outline" class="item-container__icon"></ion-icon>
+
+                            <div class="item-container__weather">
+                                35&deg;C
+                            </div>
+                        </div>
+
+                        <div class="item-container__side item-container--back">
+                            <div class="item-container__time">
+                                99:99:99
+                            </div>
+
+                            <div class="item-container__fav">
+                                <a href="#">
+                                    <ion-icon name="star-outline" class="item-container__fav-icon"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+                
+
+                <div class="col-1-of-4">
+                    <div class="item-container">
+
+                        <div class="item-container__side item-container--front">
+                            <span class="item-container__title">
+                                New York
+                            </span>
+
+                            <span class="item-container__country">
+                                Usa
+                            </span>
+
+                            <ion-icon name="sunny-outline" class="item-container__icon"></ion-icon>
+
+                            <div class="item-container__weather">
+                                35&deg;C
+                            </div>
+                        </div>
+
+                        <div class="item-container__side item-container--back">
+                            <div class="item-container__time">
+                                99:99:99
+                            </div>
+
+                            <div class="item-container__fav">
+                                <a href="#">
+                                    <ion-icon name="star-outline" class="item-container__fav-icon"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                </div>
+
+            <!-- <div class="col-1-of-4">
+                <div class="item-container">
+
+                    <a href="#" class="item-container__add-new-link">
+                        <div class="item-container__add-new">
+
+                            <ion-icon name="add-outline" class="item-container__add-new-icon"></ion-icon>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div> -->
+
+            <!-- </div> -->
+        </section>
+
+    </main>
+
+    <div class="add-new-container add-new-container__hide">
+
+        <div class="add-new-container__close">
+            <a href="#" class="add-new-container__close-link">
+                <ion-icon name="close" class="add-new-container__close-icon"></ion-icon>
+            </a>
+        </div>
+
+        <div class="add-new-container__box">
+            <div class="add-new-container__box-title">
+                <ion-icon name="location-outline" class="add-new-container__box-title-icon"></ion-icon>
+                <h2 class="heading-tertiary add-new-container__box-title-head">
+                    Type a location on the search bar for a time and weather information
+                </h2>
+            </div>
+            <div class="add-new-container__box-form">
+                <form action="#" class="form">
+                    <input type="text" class="form__input" id="search" placeholder="Search" required>
+                    <label for="search" class="form__label">Search</label>
+                </form>
+            </div>
+
+            <div class="add-new-container__items">
+
+                <!-- <a href="#" class="add-new-container__link">
+                    <div class="add-new-container__item">
+                        New York, <span>Usa</span> 
+                    </div>
+                </a>
+
+                <a href="#" class="add-new-container__link">
+                    <div class="add-new-container__item">
+                        New York, <span>Usa</span> 
+                    </div>
+                </a> -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>

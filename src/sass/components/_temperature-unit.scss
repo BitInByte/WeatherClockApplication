@@ -1,0 +1,20 @@
+.temperature-unit {
+
+    margin-left: 5rem;
+    display: inline-block;
+
+    @include clearfix;
+
+    &__title {
+        color: $color-white;
+    }
+
+    &__title,
+    &__btn {
+        float: left;
+    }
+
+    &__btn {
+        position: relative;
+    }
+}

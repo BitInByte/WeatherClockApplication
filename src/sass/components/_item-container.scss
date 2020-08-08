@@ -1,0 +1,224 @@
+.item-container {
+
+    margin: 2rem 3rem;
+
+    text-align: center;
+
+    height: 15.2rem;
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    position: relative;
+
+    overflow: visible;
+
+    @include respond(tab-port) {
+        margin: 2rem 3rem;
+    }
+
+    @include respond(tab-land) {
+        margin: 2rem .5rem;
+        height: 28.88rem;
+        border-radius: $border-radius-container;
+        overflow: hidden;
+        @include bg-color-gradient;
+        box-shadow: $shadow-effect-1;
+    }
+
+    &__side {
+        height: 15.2rem;
+        transition: all 0.8s ease;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        border-radius: $border-radius-container;
+        box-shadow: $shadow-effect-1;
+
+        overflow: hidden;
+
+        @include respond(mid) {
+            display: block;
+            position: fixed;
+            height: 50%;
+            top: unset;
+            left: unset;
+        }
+
+        @include respond (tab-land) {
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    &--front {
+        @include bg-color-gradient;
+        @include respond(tab-land ) {
+            position: relative;
+            top: 0;
+            left: 0;
+            height: 50%;
+            background-color: transparent;
+            background-image: none;
+            
+        }
+    }
+
+    &--back {
+        background-image: linear-gradient(to bottom right, $color-secondary, $color-secondary-light);
+        color: $color-white;
+        transform: rotateY(180deg);
+        @include respond(tab-land ) {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            height: 50%;
+            color: $color-grey-dark;
+            background-image: none;
+            background-color: transparent;
+        }
+       
+    }
+
+    &:hover &--front {
+        transform: rotateY(-180deg);
+        @include respond(tab-land ) {
+            transform: none;
+        }
+    }
+
+    &:hover &--back {
+        transform: rotateY(0);
+    }
+
+    &--animate {
+        animation: fadeIn .4s .4s;
+        animation-fill-mode: backwards;
+    }
+
+    &__title {
+        display: inline-block;
+        width: 100%;
+        font-size: $default-font-size;
+        letter-spacing: .3rem;
+        font-weight: 600;
+
+        padding-top: .7rem;
+    }
+
+    &__country {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__icon {
+        font-size: 4rem;
+
+        color: $color-secondary;
+
+        width: 8rem;
+
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+
+    }
+
+    &__weather {
+        font-size: $font-size-h2;
+    }
+
+    &__time {
+        font-family: $font-watch;
+        font-size: 3rem;
+        font-weight: 700;
+
+        letter-spacing: .5rem;
+
+        position: absolute;
+        top: 30%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        @include respond(tab-land) {
+            font-weight: 400;
+        }
+    }
+
+    &__fav {
+        display: block;
+        position: absolute;
+        bottom: 2.5rem;
+        left: 30%;
+
+        line-height: 0;
+
+        transform: translateX(-50%);
+
+        z-index: 30;
+
+        &-icon {
+            font-size: 4rem;
+            color: $color-white;
+            @include respond(tab-land) {
+                color: $color-grey-dark;
+            }
+        }
+    }
+
+    &__delete {
+
+        display: block;
+        position: absolute;
+        margin-top: 2px;
+        line-height: 0;
+        bottom: 2.4rem;
+        right: 30%;
+
+        transform: translateX(50%);
+
+        z-index: 30;
+
+        &-icon {
+            font-size: 4rem;
+            color: $color-white;
+            @include respond(tab-land) {
+                color: $color-grey-dark;
+            }
+        }
+    }
+
+    &__add-new {
+        height: 100%;
+
+        border-radius: $border-radius-container;
+        box-shadow: $shadow-effect-1;
+
+        position: relative;
+
+        @include bg-color-gradient;
+
+       
+
+        &-icon {
+            font-size: 15rem;
+            @include center-horizontal-vertical;
+ 
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

@@ -1,0 +1,17 @@
+.section-home {
+    box-shadow: $shadow-effect-1;
+    border-radius: $border-radius-container;
+}
+
+.section-wrapper {
+    margin: 4rem auto;
+}
+
+.section-controls {
+
+    @include respond(mid) {
+       display: block;
+       width: 100%;
+       text-align: center;
+    }
+}
