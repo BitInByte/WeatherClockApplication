@@ -27,7 +27,8 @@ The commands above need to be introduced on the root folder of the project.
 The project need an API key as well that you can get it free from the OPEN WEATHER API. You just only need to change the api key on the models on the project.  
   
 ## Specifications
-This project came when I was talking with one of my friends that actually lives far away from where I am currenctly living! We get different timezones and I don't know when is he up or when is he sleeping. I will use this every day because it's really helpfull to know when can I call this friend mine that lives far away from me! The project was really challenging, I get a lot of stuck times, specially with the intervals to create the clock! Hope that you like it!   
+This project came when I was talking with one of my friends that actually lives far away from where I am currenctly living! We get different timezones and I don't know when is he up or when is he sleeping. I will use this every day because it's really helpfull to know when can I call him or not! The project was really challenging, I get a lot of stuck times, specially with the intervals to create the clock! Hope that you like it!  
+The CSS is built without frameworks, neither flexbox, neither grid!   
 ## Built With
 - HTML
 - CSS3
