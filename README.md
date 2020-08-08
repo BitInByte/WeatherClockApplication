@@ -1,9 +1,9 @@
 # My Weather App With City Clock
 ## [Check it here](https://weatherapp-758e4.web.app/)
 ![Thumbnail](thumbnail1.png)
-Principal page of the Weather App
+Principal page of the Weather App  
 ![Thumbnail](thumbnail2.png)
-Week forecast of a specific country/city
+Week forecast of a specific country/city  
 ## Getting Started
 The database is made with a free API that you can find here: [OPEN WEATHER API](https://openweathermap.org/api) - All credits on API to them.   
 ### Installing
